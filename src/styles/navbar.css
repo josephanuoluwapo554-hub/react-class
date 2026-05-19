@@ -1,7 +1,15 @@
 .nav{
+    background-color: black;
+    color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 20px;
+}
+.hi{
+    background-color: black;
+    color: purple;
+    display: block;
 }
 
 .logo{

@@ -1,14 +1,15 @@
 import React from 'react'
-import pic1 from "../assets/pic1.jpg"
-import pic2 from "../assets/pic2.jpg"
-import pic3 from "../assets/pic3.jpg"
-import pic4 from "../assets/pic4.jpg"
-import pic5 from "../assets/pic5.jpg"
+import pic1 from "../assets/pics/college.jpg"
+import pic2 from "../assets/pics/tiger.jpg"
+import pic3 from "../assets/hero.png"
+import pic4 from "../assets/pics/product.jpg"
+import pic5 from "../assets/pics/prof.jpg"
+import "../styles/Hero.css"
 
 function Hero() {
   return (
     <div className="hero">
-      <h1>Hero</h1>
+      <h1></h1>
 
       <div className="image-container">
         <img src={pic1} alt="pic1" />

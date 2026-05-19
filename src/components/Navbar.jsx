@@ -2,27 +2,31 @@ import React, {useState} from 'react'
 import "../styles/navbar.css"
 
 const Navbar = () => {
-    const [name, setName] = useState("Ade")
+    // const [name, setName] = useState("Ade")
     const [counter, setCounter] = useState(0)
 
-    const handleName = () => {
-        if (name == "Ade"){
-            setName("Bisi")
-        }else(
-            setName("Ade")
-        )
-    }
+    // const handleName = () => {
+    //     if (name == "Ade"){
+    //         setName("Bisi")
+    //     }else(
+    //         setName("Ade")
+    //     )
+    // }
 
-    const handleCount = () => {
-        if (counter < 10000){
-            setCounter(counter + 1)
-        }
-    }
+
+//     const handleCount = () => {
+//         if (counter < 10000){
+//             setCounter(counter + 1)
+//         }
+//     }
 
     const styles = {
-        "backgroundColor" : "green",
-        "color" : "white"
+        "backgroundColor" : "purple",
+        "color" : "white",
+        "text-decoration" : "none" ,
+
     }
+
   return (
     <>
      <div className= 'nav'>
@@ -34,13 +38,16 @@ const Navbar = () => {
              <a style={styles} href="">Movies</a>
               <a style={styles} href="">Last Search</a>
         </div>
-        <button onClick={handleName}>Change name</button>
-      
+    
+
+        {/* <div className='hi'>
+      <h1>hello {name}, welcome to the Movies</h1>
+        </div> */}
+        
     </div>
 
-    <h1>hello {name}, welcome to the Movies</h1>
-    <h2>Count: {counter}</h2>
-    <button onClick={handleCount}>+1</button>
+    
+  
     </>
    
   )
